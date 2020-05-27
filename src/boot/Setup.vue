@@ -14,7 +14,6 @@ import * as Font from "expo-font";
 import main from "../Main";
 
 Vue.use(VueNativeBase);
-Vue.use(store);
 export default {
   components: { main, AppLoading },
   data() {

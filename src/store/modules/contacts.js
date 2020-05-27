@@ -4,6 +4,7 @@ import himanshu from '../../../assets/contacts/himanshu.png'
 import shweta from '../../../assets/contacts/shweta.png'
 import shruti from '../../../assets/contacts/shruti.png'
 import shivraj from '../../../assets/contacts/shivraj.jpg'
+import Axios from 'axios'
 const state = {
     contacts: [
         {
@@ -40,10 +41,14 @@ const state = {
 };
 
 const getters = {
-    allContacts: (state) => state.contacts.array()
+    allContacts: (state) => state.contacts
 };
 
-const actions = {};
+const actions = {
+    async fetchContacts({commit}) {
+        const res = await Axios.get('')
+    }
+};
 
 const mutations = {};
 
