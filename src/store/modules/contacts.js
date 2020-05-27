@@ -40,7 +40,7 @@ const state = {
 };
 
 const getters = {
-    allContacts: (state) => state.contacts.array()
+    allContacts: (state) => state.contacts
 };
 
 const actions = {};
