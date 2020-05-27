@@ -7,14 +7,14 @@
 
 <script>
 import Vue from "vue-native-core";
-import Store from '../store';
+import store from '../store';
 import { VueNativeBase } from "native-base";
 import { AppLoading } from "expo";
 import * as Font from "expo-font";
 import main from "../Main";
 
 Vue.use(VueNativeBase);
-Vue.use(Store);
+Vue.use(store);
 export default {
   components: { main, AppLoading },
   data() {
